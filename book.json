@@ -1,0 +1,35 @@
+{
+    "title": "编写gitbook电子书教程",
+    "description": "gitbook电子书教程",
+    "author": "WilsonQiang",
+    "language": "zh-hans",
+    "root": ".",
+
+    "plugins": [
+        "donate",
+        "github-buttons@2.1.0",
+        "edit-link"
+    ],
+
+    "pluginsConfig": {
+        "donate": {
+            "wechat": "https://i.imgur.com/688Yc9a.jpg",
+            "alipay": "https://i.imgur.com/SckB9Am.jpg",
+            "title": "",
+            "button": "打赏",
+            "alipayText": "支付宝打赏",
+            "wechatText": "微信打赏"
+        },
+        "github-buttons": {
+            "repo": "WilsonQiang/gitbook",
+            "types": [
+                "star"
+            ],
+            "size": "small"
+        },
+        "edit-link": {
+            "base": "https://github.com/WilsonQiang/gitbook/edit/master",
+            "label": "Edit This Page"
+        }
+    }
+}
