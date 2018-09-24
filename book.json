@@ -21,14 +21,14 @@
             "wechatText": "微信打赏"
         },
         "github-buttons": {
-            "repo": "WilsonQiang/gitbook",
+            "repo": "WilsonQiang/ShadowSockR-and-VPS",
             "types": [
                 "star"
             ],
             "size": "small"
         },
         "edit-link": {
-            "base": "https://github.com/WilsonQiang/gitbook/edit/master",
+            "base": "https://github.com/WilsonQiang/ShadowSockR-and-VPS/edit/master",
             "label": "Edit This Page"
         }
     }
