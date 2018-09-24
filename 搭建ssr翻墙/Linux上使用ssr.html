@@ -1,0 +1,542 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linux上使用ssr · 编写gitbook电子书教程</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="WilsonQiang">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Android上使用ssr.html" />
+    
+    
+    <link rel="prev" href="Windows上使用ssr.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"WilsonQiang/gitbook","types":["star"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../什么是GFW.html">
+            
+                <a href="../什么是GFW.html">
+            
+                    
+                    什么是GFW
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../为什么要翻墙.html">
+            
+                <a href="../为什么要翻墙.html">
+            
+                    
+                    为什么要翻墙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../免费翻墙/免费翻墙.html">
+            
+                <a href="../免费翻墙/免费翻墙.html">
+            
+                    
+                    免费翻墙
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../免费翻墙/免费翻墙/免费VPN.html">
+            
+                <a href="../免费翻墙/免费翻墙/免费VPN.html">
+            
+                    
+                    免费VPN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../免费翻墙/免费翻墙/免费ss-ssr.html">
+            
+                <a href="../免费翻墙/免费翻墙/免费ss-ssr.html">
+            
+                    
+                    免费ss/ssr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../免费翻墙/免费翻墙/Android破解版蓝灯.html">
+            
+                <a href="../免费翻墙/免费翻墙/Android破解版蓝灯.html">
+            
+                    
+                    Android破解版蓝灯.md
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../自己建梯子/自己建梯子.html">
+            
+                <a href="../自己建梯子/自己建梯子.html">
+            
+                    
+                    自己建梯子
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../自己建梯子/购买服务器.html">
+            
+                <a href="../自己建梯子/购买服务器.html">
+            
+                    
+                    购买服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../自己建梯子/连接服务器.html">
+            
+                <a href="../自己建梯子/连接服务器.html">
+            
+                    
+                    连接服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../自己建梯子/连接服务器常见问题.html">
+            
+                <a href="../自己建梯子/连接服务器常见问题.html">
+            
+                    
+                    连接服务器常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../自己建梯子/修改Vultr服务器密码.html">
+            
+                <a href="../自己建梯子/修改Vultr服务器密码.html">
+            
+                    
+                    修改Vultr密码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="搭建ssr翻墙.html">
+            
+                <a href="搭建ssr翻墙.html">
+            
+                    
+                    搭建ssr翻墙
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="Windows上使用ssr.html">
+            
+                <a href="Windows上使用ssr.html">
+            
+                    
+                    Windows上使用ssr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="Linux上使用ssr.html">
+            
+                <a href="Linux上使用ssr.html">
+            
+                    
+                    Linux上使用ssr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="Android上使用ssr.html">
+            
+                <a href="Android上使用ssr.html">
+            
+                    
+                    Android上使用ssr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="MacOS上使用ssr.html">
+            
+                <a href="MacOS上使用ssr.html">
+            
+                    
+                    MacOS上使用ssr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="IOS上使用ssr.html">
+            
+                <a href="IOS上使用ssr.html">
+            
+                    
+                    IOS上使用ssr
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../Shadowsocks相关知识/Shadowsocks相关知识.html">
+            
+                <a href="../Shadowsocks相关知识/Shadowsocks相关知识.html">
+            
+                    
+                    Shadowsocks相关知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../GFW的TCP封锁猜想/GFW的TCP封锁猜想.html">
+            
+                <a href="../GFW的TCP封锁猜想/GFW的TCP封锁猜想.html">
+            
+                    
+                    GFW的TCP封锁猜想
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../hosts&DNS工作原理/hosts&DNS工作原理.html">
+            
+                <a href="../hosts&DNS工作原理/hosts&DNS工作原理.html">
+            
+                    
+                    hosts&DNS工作原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Linux上使用ssr</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="linux-&#x4E0A;&#x4F7F;&#x7528;-shadowsocksr-&#x79D1;&#x5B66;&#x4E0A;&#x7F51;-ssr">Linux &#x4E0A;&#x4F7F;&#x7528; ShadowsocksR &#x79D1;&#x5B66;&#x4E0A;&#x7F51; ssr</h1>
+<p>Linux SSR&#x5BA2;&#x6237;&#x7AEF; <a href="https://github.com/erguotou520/electron-ssr/releases" target="_blank">&#x70B9;&#x51FB;&#x4E0B;&#x8F7D;&#x5730;&#x5740;</a><br>
+<a href="https://www.vultr.com/?ref=7539977" target="_blank"><img src="https://www.vultr.com/media/banner_1.png" width="100%" height="90"></a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Windows上使用ssr.html" class="navigation navigation-prev " aria-label="Previous page: Windows上使用ssr">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Android上使用ssr.html" class="navigation navigation-next " aria-label="Next page: Android上使用ssr">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linux上使用ssr","level":"1.6.2","depth":2,"next":{"title":"Android上使用ssr","level":"1.6.3","depth":2,"path":"搭建ssr翻墙/Android上使用ssr.md","ref":"搭建ssr翻墙/Android上使用ssr.md","articles":[]},"previous":{"title":"Windows上使用ssr","level":"1.6.1","depth":2,"path":"搭建ssr翻墙/Windows上使用ssr.md","ref":"搭建ssr翻墙/Windows上使用ssr.md","articles":[]},"dir":"ltr"},"config":{"plugins":["donate","github-buttons@2.1.0","edit-link","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"https://i.imgur.com/SckB9Am.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"https://i.imgur.com/688Yc9a.jpg","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-buttons":{"repo":"WilsonQiang/gitbook","types":["star"],"size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/WilsonQiang/gitbook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"WilsonQiang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"编写gitbook电子书教程","language":"zh-hans","gitbook":"*","description":"gitbook电子书教程"},"file":{"path":"搭建ssr翻墙/Linux上使用ssr.md","mtime":"2018-09-24T06:36:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-24T09:19:53.604Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
